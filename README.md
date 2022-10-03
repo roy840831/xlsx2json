@@ -2,9 +2,7 @@
 
 ## 概述
 
-This is a tool to create json by using excel(xlsx), or to be exact, we can create json from excel(xlsx). In many cases, we need json to generate a large number of similar definition files or test data.
-It happens that the row and column format of excel can output data efficiently.
-Through this program, we can convert excel and json to each other.
+This a tool for create json from excel(xlsx).
 
 很多時候會需要透過json產出大量相似的定義檔或是測試資料，
 
@@ -13,7 +11,6 @@ Through this program, we can convert excel and json to each other.
 透過本程式能將excel與json相互轉換。
 
 ## 功能介绍
-
 ```sh
 # 查看使用帮助
 運行環境為python3，相依套件記載在requirements.txt，
@@ -42,7 +39,6 @@ xlsx2json.exe -j example.xlsx
 ## excel對應json結構
 
 本程式 透過下列三種轉換方式，將json轉換到excel，
-
 ```sh
     pyStructForJson = {
         "dict": "object",
@@ -50,7 +46,6 @@ xlsx2json.exe -j example.xlsx
         "list-dict": "dictInArray",
     }
 ```
-
 ### 1. object:
   key-value型，excel內為dict表示，左邊放KEY的時候右邊為value。
   
